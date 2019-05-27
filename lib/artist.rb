@@ -21,7 +21,8 @@ class Artist
   end 
   
   def self.song_count
-    @@all_songs.map {|s| s.songs.length}.sum
+    # @@all_songs.map {|s| s.songs.length}.sum
+    Song.all.count
   end 
   
 end 
