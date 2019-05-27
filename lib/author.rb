@@ -17,7 +17,7 @@ class Author
     self.add_post(ttl)
   end 
   
-  def post_count
+  def self.post_count
     Posts.all
   end 
 
