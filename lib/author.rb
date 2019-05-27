@@ -14,7 +14,7 @@ class Author
   
   def add_post_by_title(title)
     ttl = Post.new(title)
-    ttl.author = self 
+    self.add_post(ttl)
   end 
   
   def post_count
